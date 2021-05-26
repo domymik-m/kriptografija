@@ -1,0 +1,7 @@
+elGamal module
+==============
+
+.. automodule:: elGamal
+   :members:
+   :undoc-members:
+   :show-inheritance:

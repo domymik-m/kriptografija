@@ -1,7 +1,0 @@
-desifriranje module
-===================
-
-.. automodule:: desifriranje
-   :members:
-   :undoc-members:
-   :show-inheritance:

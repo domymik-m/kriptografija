@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>algoritmiTB module &#8212; Kriptografija 2021 dokumentacija</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Abecedni popis" href="genindex.html" />
+    <link rel="search" title="Traži" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigacija</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Opceniti abecedni indeks"
+             accesskey="I">abecedni indeks</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python indeks modula"
+             >Moduli</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Kriptografija 2021 dokumentacija</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">algoritmiTB module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-algoritmiTB">
+<span id="algoritmitb-module"></span><h1>algoritmiTB module<a class="headerlink" href="#module-algoritmiTB" title="Link na taj naslov">¶</a></h1>
+<dl class="py function">
+<dt id="algoritmiTB.inverz">
+<code class="sig-prename descclassname">algoritmiTB.</code><code class="sig-name descname">inverz</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">broj</span></em>, <em class="sig-param"><span class="n">modulo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#algoritmiTB.inverz" title="Link na tu definiciju">¶</a></dt>
+<dd><p>Funkcija koja računa multiplikativni inverz nekog broja po nekom modulu.</p>
+<p>Za dane brojeve <span class="math notranslate nohighlight">\(\text{modulo}\)</span> i <span class="math notranslate nohighlight">\(\text{broj}\)</span> se traži broj <span class="math notranslate nohighlight">\(\text{inverz}\)</span> tako da vrijedi</p>
+<div class="math notranslate nohighlight">
+\[\text{broj} \cdot \text{inverz} \equiv 1\ \text{mod}\ \text{modulo}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parametri</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>broj</strong> (<em>int</em>) – prirodan broj čiji se inverz računa</p></li>
+<li><p><strong>modulo</strong> (<em>int</em>) – prirodan broj po kojem se računa inverz</p></li>
+</ul>
+</dd>
+<dt class="field-even">Vraća</dt>
+<dd class="field-even"><p>multiplikativni inverz od <span class="math notranslate nohighlight">\(\text{broj}\)</span> modulo <span class="math notranslate nohighlight">\(\text{modulo}\)</span></p>
+</dd>
+<dt class="field-odd">Vraća tip</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="algoritmiTB.primitivni_korijen">
+<code class="sig-prename descclassname">algoritmiTB.</code><code class="sig-name descname">primitivni_korijen</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modulo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#algoritmiTB.primitivni_korijen" title="Link na tu definiciju">¶</a></dt>
+<dd><p>Funkcija koja računa najmanji primitivni korijen po nekom modulu.</p>
+<p>Koristi se funkcija <a class="reference internal" href="#algoritmiTB.red_elementa" title="algoritmiTB.red_elementa"><code class="xref py py-func docutils literal notranslate"><span class="pre">algoritmiTB.red_elementa()</span></code></a>
+kako bi se našao najmanji broj čiji je red upravo <span class="math notranslate nohighlight">\(\text{modulo}-1\)</span>
+uz pretpostavku da je riječ o prostom broju.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametri</dt>
+<dd class="field-odd"><p><strong>modulo</strong> (<em>int</em>) – prost broj za koji se računa najmanji primitivni korijen</p>
+</dd>
+<dt class="field-even">Vraća</dt>
+<dd class="field-even"><p>najmanji primitivni korijen po danom modulu</p>
+</dd>
+<dt class="field-odd">Vraća tip</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="algoritmiTB.rastavNaZnamenke">
+<code class="sig-prename descclassname">algoritmiTB.</code><code class="sig-name descname">rastavNaZnamenke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">broj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#algoritmiTB.rastavNaZnamenke" title="Link na tu definiciju">¶</a></dt>
+<dd><p>Funkcija koja rastavlja broj na znamenke.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametri</dt>
+<dd class="field-odd"><p><strong>broj</strong> (<em>int</em>) – prirodan broj koji se rastavlja na znamenke</p>
+</dd>
+<dt class="field-even">Vraća</dt>
+<dd class="field-even"><p>lista znamenki danog broja</p>
+</dd>
+<dt class="field-odd">Vraća tip</dt>
+<dd class="field-odd"><p>int[]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="algoritmiTB.red_elementa">
+<code class="sig-prename descclassname">algoritmiTB.</code><code class="sig-name descname">red_elementa</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">broj</span></em>, <em class="sig-param"><span class="n">modulo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#algoritmiTB.red_elementa" title="Link na tu definiciju">¶</a></dt>
+<dd><p>Funkcija koja računa red elementa nekog broja po nekom modulu.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametri</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>broj</strong> (<em>int</em>) – prirodni broj čiji se red računa</p></li>
+<li><p><strong>modulo</strong> (<em>int</em>) – prirodni broj po čijem se modulu red računa</p></li>
+</ul>
+</dd>
+<dt class="field-even">Vraća</dt>
+<dd class="field-even"><p>red elementa po danom modulu</p>
+</dd>
+<dt class="field-odd">Vraća tip</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>Trenutna stranica</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/algoritmiTB.rst.txt"
+            rel="nofollow">Prikaži izvorni kod</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Brzo pretraživanje</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Traži" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigacija</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Opceniti abecedni indeks"
+             >abecedni indeks</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python indeks modula"
+             >Moduli</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Kriptografija 2021 dokumentacija</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">algoritmiTB module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Sva prava zadržana 2021, Dominik Mikulčić.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+sifriranje module
+=================
+
+.. automodule:: sifriranje
+   :members:
+   :undoc-members:
+   :show-inheritance:

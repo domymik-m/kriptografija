@@ -1,7 +1,0 @@
-šifriranje module
-=================
-
-.. automodule:: šifriranje
-   :members:
-   :undoc-members:
-   :show-inheritance:

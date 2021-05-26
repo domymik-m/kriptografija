@@ -1,7 +1,0 @@
-algoritmiTB module
-==================
-
-.. automodule:: algoritmiTB
-   :members:
-   :undoc-members:
-   :show-inheritance:

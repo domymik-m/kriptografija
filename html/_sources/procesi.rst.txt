@@ -1,7 +1,0 @@
-procesi module
-==============
-
-.. automodule:: procesi
-   :members:
-   :undoc-members:
-   :show-inheritance:
